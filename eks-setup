@@ -1,0 +1,6 @@
+First we need to install a container runtime:
+like -> docker or containerd etc
+
+installing kubectl
+curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.34.2/2025-11-13/bin/darwin/amd64/kubectl
+
