@@ -9,5 +9,6 @@ managedNodeGroups:
 
     # type of instances
     instanceTypes: ["t3.small"]
-    #desiredCapacity: 1 #  by default this value is 3
+    desiredCapacity: 2 #  by default this value is 3
+    # but we are taking two instances as our kubernetes worker nodes
     spot: true  # Here we are using spot instances for our practice purpose
