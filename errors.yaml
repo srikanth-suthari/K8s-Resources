@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: pod-errors
   labels:
-    name: erorrs
+    name: errors
     env: dev
 spec:
   containers:
