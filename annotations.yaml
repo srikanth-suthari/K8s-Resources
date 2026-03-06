@@ -6,7 +6,8 @@ metadata:
     name: annotations
     key: value
     # Annotation
-  github.com: "github.com/srikanth-suthari"
+  annotations:
+    github.com: "github.com/srikanth-suthari"
 spec:
   containers:
     - name: container1
