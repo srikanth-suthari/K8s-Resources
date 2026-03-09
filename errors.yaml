@@ -8,6 +8,8 @@ metadata:
 spec:
   containers:
     - name: nginx
+      # imagepullbackoff
       image: nginxx
     - name: almalinux
+       # crashloopbackoff
       image: almalinux:9
