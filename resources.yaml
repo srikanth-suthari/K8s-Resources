@@ -17,6 +17,6 @@ spec:
         memory: "250M"
       # If the requested resources are not enough, then the pod will use these resources from the limits additionally
       # At final a pod can reach to this limit of resource usage
-      limit: # Hard limit which is allocated for the pod
+      limits: # Hard limit which is allocated for the pod
         cpu: "200m"
         memory: "500M"
