@@ -13,10 +13,10 @@ spec:
       # A pod can use these resources, based on the allocation
       # If these resources are not enough, then the pod will start using the max limit from the limits
       requests:   # soft limit which is allocated for the pod
-        cpu: "100m"
-        memory: "250M"
+        cpu: "5m"
+        memory: "100M"
       # If the requested resources are not enough, then the pod will use these resources from the limits additionally
       # At final a pod can reach to this limit of resource usage
       limits: # Hard limit which is allocated for the pod
-        cpu: "200m"
-        memory: "500M"
+        cpu: "10m"
+        memory: "20M"
