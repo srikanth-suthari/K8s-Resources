@@ -1,1 +1,1 @@
-Kubernetes on AWS
+Kubernetes on AWS as EKS
