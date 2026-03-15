@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: configmap-demo
 data:
-  name: "username"
-  value: "srikanth"
+  username: "srikanth"
+  password: "srikanth@123"
   db_host_name: "mongodb"
   db_host_pass: "srikanth@123"
