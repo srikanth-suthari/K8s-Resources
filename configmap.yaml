@@ -7,3 +7,5 @@ data:
   password: "srikanth@123"
   db_host_name: "mongodb"
   db_host_pass: "srikanth@123"
+  payment_host: "roboshop"
+  payment_pass: "roboshop@123"
