@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: Secrete
-metadata:
-  name: secrets-demo
-  labels:
-    name: demo-secrets
-spec:
