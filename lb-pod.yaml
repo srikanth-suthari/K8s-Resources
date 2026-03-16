@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadat:
+  name: lb-pod
+  labels:
+    name: pod-lb
+    type: loadbalncer
+    env: dev-lb
+spec:
+  containers:
+  - name: apache2
+    image: httpd
