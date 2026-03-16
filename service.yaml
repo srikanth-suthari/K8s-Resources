@@ -4,7 +4,8 @@ metadata:
   name: service-cip-demo
 spec:
   selector:
-    name: nginx
+    name: cip
+    env: dev
   type: ClusterIP
   ports:
     - protocol: TCP
