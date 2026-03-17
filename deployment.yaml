@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: my-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      name: my-dep
+      type: backend
+      env: test
+  template:
+    metadata:
+      name: my-deployment-pods
+      labels:
+        name: my-dep
+        type: backend
+        env: test
+    spec:
+      containers:
+        - name: httpd
+          image: httpd
