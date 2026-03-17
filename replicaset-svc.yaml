@@ -4,7 +4,9 @@ metadata:
   name: rs-svc
 spec:
   selector:
-    name: rs
+    name: eg-rs
+    env: prod
+    type: frontend
   type: NodePort
   ports:
     - protocol: TCP
