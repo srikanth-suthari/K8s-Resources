@@ -1,0 +1,24 @@
+apiVersion: apps/v1  # this is the apiversion for ReplicaSet
+kind: ReplicaSet     # Resource/Object Name
+metadata:
+  name: my-rs        # Name of the replicaset
+  labels:
+    name: rs         # We do not use this labels to select the resource like pods and services "These are Optional"
+spec:
+  replicas: 3        # No.of replicas to be maintained by the replicaset object
+  selector:
+    matchLabels:     # The replicaset considers these labels and make sure all the pods are running as expected
+      name: eg-rs    # We have to provide all the labels which are given while pod/resource creation
+      env: prod      # Here we use matchLabels to match and select the labels, which are from the pod/resource
+      type: frontend
+  template:          # Here we mention the actual labels which are considered by the replicaset
+    metadata:
+      name: my-rs-pod # This section is actually for the pod and its metadata
+      labels:
+        name: eg-rs
+        env: prod
+        type: frontend    # These are the actual labels that replicaset look for and maintains the replicas
+    spec:             # Here we define the pod configuration.
+      containers:
+        - name: nginx
+          image: nginx
