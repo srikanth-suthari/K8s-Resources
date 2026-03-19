@@ -22,3 +22,6 @@ spec:
       containers:
         - name: nginx
           image: nginx
+	- name: ubutnu
+	  image: ubutnu
+	  command: ["sleep", "10000"]
