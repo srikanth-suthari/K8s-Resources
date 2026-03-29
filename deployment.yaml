@@ -20,3 +20,20 @@ spec:
       containers:
         - name: httpd
           image: httpd
+
+---
+#Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: demo-svc-deployment
+spec:
+  type: LoadBalancer
+  selector:
+    name: my-dep
+    type: backend
+    env: test
+  protocol:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
