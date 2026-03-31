@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: liveness&readiness-demo
-  type: self-healing
+  env: tesing
 spec:
   containers:
     - name: nginx
