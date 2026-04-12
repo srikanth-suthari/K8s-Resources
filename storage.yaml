@@ -4,3 +4,4 @@ aws efs
 k8s pvs
 k8s pvcs
 liveness and readiness probes
+#Service for storage
