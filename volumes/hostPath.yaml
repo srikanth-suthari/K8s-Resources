@@ -2,7 +2,7 @@
 # it is highly not recommended to use from Kubernetes, because it can leak the secrets and the metrics of the node
 # it also can be with sidecar containers for host logs to be pushed to an external log storage
 # hostPath is mostly used with DaemonSets for the logs collection of the host
-# This can be an example for the hostPath
+# This can be an example for the hostPath with a Daemonset
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:
