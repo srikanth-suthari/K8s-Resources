@@ -3,3 +3,5 @@ kind: PersistantVolume
 metadata:
   name: static-volume
 spec:
+  storageClassName: static-ebs
+  
