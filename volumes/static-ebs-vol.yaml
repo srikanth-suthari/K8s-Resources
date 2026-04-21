@@ -3,7 +3,7 @@ kind: PersistentVolume
 metadata:
   name: static-ebs-vol
 spec:
-  accessMode:
+  accessModes:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
   capacity:
