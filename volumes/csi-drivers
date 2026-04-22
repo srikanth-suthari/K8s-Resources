@@ -1,1 +1,9 @@
+# Process of creating the persistent volumes in k8s
+1. create the disk (ebs) in our cloud provider
+
+2. disk should be in the same az (availability zone) to mount the ebs volume
+
+3. install the (ebs) csi drivers
 kubectl apply -k "github.com/kubernetes-sigs/aws-ebs-csi-driver/deploy/kubernetes/overlays/stable/?ref=release-1.59"
+
+4. EC2 nodes should have the IAM role access to mount the disks as ebs volumes
