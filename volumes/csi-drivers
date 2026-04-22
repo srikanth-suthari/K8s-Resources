@@ -4,6 +4,7 @@
 2. disk should be in the same az (availability zone) to mount the ebs volume
 
 3. install the (ebs) csi drivers
+# we can install the csi drivers using this link below
 kubectl apply -k "github.com/kubernetes-sigs/aws-ebs-csi-driver/deploy/kubernetes/overlays/stable/?ref=release-1.59"
 
 4. EC2 nodes should have the IAM role access to mount the disks as ebs volumes
