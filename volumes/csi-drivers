@@ -7,3 +7,4 @@
 kubectl apply -k "github.com/kubernetes-sigs/aws-ebs-csi-driver/deploy/kubernetes/overlays/stable/?ref=release-1.59"
 
 4. EC2 nodes should have the IAM role access to mount the disks as ebs volumes
+# We should have the ebs id to mount
