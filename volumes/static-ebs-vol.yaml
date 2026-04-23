@@ -10,3 +10,5 @@ spec:
     storage: 15Gi
   csi:
     fsType: ext4
+  volume:
+    volume_nem: ebs
