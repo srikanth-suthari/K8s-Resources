@@ -12,4 +12,5 @@ spec:
     fsType: ext4
   volume:
     volume_nem: ebs
+    volume_id: #some id related or from the cloud provider
   storageClassName: standrard
