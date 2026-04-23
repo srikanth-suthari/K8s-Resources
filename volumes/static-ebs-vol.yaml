@@ -12,3 +12,4 @@ spec:
     fsType: ext4
   volume:
     volume_nem: ebs
+  storageClassName: standrard
