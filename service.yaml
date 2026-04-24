@@ -9,5 +9,5 @@ spec:
   type: ClusterIP
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 80 
+      port: 80 # this is the service port which exposes the application from the pod or our container.
+      targetPort: 80 # this is the container port.
