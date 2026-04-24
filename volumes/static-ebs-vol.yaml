@@ -18,7 +18,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: static-pvc
 spec:
-  accessMode:
+  accessModes:
     - ReadWriteOnce
   volumeName: static-vol
   storageClassName: ""
