@@ -37,9 +37,9 @@ spec:
     volumeMounts:
     - name: pod-vol
       mountPath: /usr/share/nginx/html
-  nodeSelector:
-    topology.kubernetes.io/zone: ap-south-2a
   volumes:
   - name: pod-vol
     persistentVolumeClaim:
       claimName: static-pvc
+  nodeSelector:
+    topology.kubernetes.io/zone: ap-south-2a
