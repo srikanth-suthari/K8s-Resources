@@ -5,9 +5,8 @@ metadata:
 spec:
   type: LoadBalancer
   selector:
-    name: pod-lb
     type: loadbalancer
-    env: dev-lb
   ports:
   - protocol: TCP
     port: 80
+    targetPort: 80
