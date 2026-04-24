@@ -10,6 +10,8 @@ spec:
     env: dev-np
   ports:
   - protocol: TCP
-    port: 80
+    port: 80 #This is the service port
+    # for nodeport we can mention the target port between 30000-32767 range
+    # if we don't mention the port number k8s will automatically assing a port for this service
     targetPort: 80
     nodePort: 30007
