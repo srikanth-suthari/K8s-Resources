@@ -40,4 +40,4 @@ spec:
   volumes:
   - name: pod-vol
     persistentVolumeClaim:
-      ClaimName: static-vol
+      claimName: static-vol
