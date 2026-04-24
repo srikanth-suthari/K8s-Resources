@@ -7,7 +7,7 @@ spec:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain   # does not delete the data even after the pod is terminated or detached
   capacity:
-    storage: 15Gi
+    storage: 20Gi
   csi:
     driver: ebs.csi.aws.com
     fsType: ext4
