@@ -39,5 +39,5 @@ spec:
       mountPath: /usr/share/nginx/html
   volumes:
   - name: pod-vol
-    PersistentVolumeClaim:
+    persistentVolumeClaim:
       ClaimName: static-vol
