@@ -9,8 +9,6 @@ spec:
   capacity:
     storage: 15Gi
   csi:
+    driver: ebs.csi.aws.com
     fsType: ext4
-  volume:
-    volume_nem: ebs
-    volume_id: #some id related or from the cloud provider
-  storageClassName: standrard
+    volumeHandle: vol-0447b3f0482d10906
