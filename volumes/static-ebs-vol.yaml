@@ -37,7 +37,7 @@ spec:
     volumeMounts:
     - name: pod-vol
       mountPath: /usr/share/nginx/html
-  nodeSelectors:
+  nodeSelector:
     topology.kubernetes.io/zone: ap-south-2a
   volumes:
   - name: pod-vol
