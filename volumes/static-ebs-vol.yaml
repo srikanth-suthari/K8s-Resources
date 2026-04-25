@@ -25,21 +25,21 @@ spec:
   resources:
     requests:
       storage: 20Gi
-# ---
-# apiVersion: v1
-# kind: Pod
-# metadata:
-#   name: pv-pod
-# spec:
-#   containers:
-#   - name: nginx
-#     image: nginx
-#     volumeMounts:
-#     - name: pod-vol
-#       mountPath: /usr/share/nginx/html
-#   volumes:
-#   - name: pod-vol
-#     persistentVolumeClaim:
-#       claimName: static-pvc
-#   nodeSelector:
-#     topology.kubernetes.io/zone: ap-south-2a
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pv-pod
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    volumeMounts:
+    - name: pod-vol
+      mountPath: /usr/share/nginx/html
+  volumes:
+  - name: pod-vol
+    persistentVolumeClaim:
+      claimName: static-pvc
+  nodeSelector:
+    topology.kubernetes.io/zone: ap-south-2a
