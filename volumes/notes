@@ -14,6 +14,7 @@ These are the mandatory things to be followed while creating and mounting the pv
 
 - name of the pvc can be anything
 - name of the volume can also be anything in the pod level
+- a single pvc or volume can be attached to many pods
 
 This command lists which pods are using which volumes or claims
 # kubectl get pods -o json | jq '.items[] | {pod: .metadata.name, volumes: .spec.volumes}'
