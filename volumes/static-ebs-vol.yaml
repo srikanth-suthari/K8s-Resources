@@ -12,19 +12,19 @@ spec:
     driver: ebs.csi.aws.com
     fsType: ext4
     volumeHandle: vol-064cb68c14853d9ce
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: ebs-static-pv
-spec:
-  storageClassName: ""
-  volumeName: ebs-static
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 20Gi
+# ---
+# apiVersion: v1
+# kind: PersistentVolumeClaim
+# metadata:
+#   name: ebs-static-pv
+# spec:
+#   storageClassName: ""
+#   volumeName: ebs-static-pv
+#   accessModes:
+#     - ReadWriteOnce
+#   resources:
+#     requests:
+#       storage: 20Gi
 # ---
 # apiVersion: v1
 # kind: Pod
