@@ -16,7 +16,7 @@ spec:
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: ebs-static-pvc
+  name: ebs-static-pv
 spec:
   storageClassName: ""
   volumeName: ebs-static
