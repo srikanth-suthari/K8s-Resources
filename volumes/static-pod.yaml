@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: static-pod
+spec:
+  containers:
+    - name: almalinux
+      image: almalinux:9
+      command: ["sleep", "10000"]
+      volumeMounts:
+        - name: static-vol
+          mountPath: /mnt/data
+  volumes:
+    - name: static-vol
+      persistentVolumeClaim:
+        claimName: ebs-static-pvc
+  nodeSelector:
+    topology.ebs.csi.aws.com/zone: ap-south-2a
