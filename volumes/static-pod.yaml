@@ -1,3 +1,5 @@
+# I tried attaching the same volume with two pod and this is the second pod.
+# This test was successful, i was able to get the contents which were created by the nginx pod
 apiVersion: v1
 kind: Pod
 metadata:
