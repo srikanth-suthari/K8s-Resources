@@ -5,7 +5,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
-  persistentVolumeReclaimPolicy: Retain   # does not delete the data even after the pod is terminated or detached
+  persistentVolumeReclaimPolicy: Delete   # does not delete the data even after the pod is terminated or detached
   capacity:
     storage: 20Gi
   csi:
