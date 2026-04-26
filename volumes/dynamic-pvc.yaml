@@ -9,3 +9,19 @@ spec:
   resources:
     requests:
       storage: 10Gi
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: dynamic-pod
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+      volumeMounts:
+        - name: dynamic-vol
+          mountPath: /usr/share/nginx/html
+  volumes:
+    - name: dynamic-vol
+      persistentVolumeClaim:
+        claimName: dynamic-pvc
