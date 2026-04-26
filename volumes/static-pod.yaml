@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
     - name: almalinux
-      image: almalinux:9
+      image: ubuntu
       command: ["sleep", "10000"]
       volumeMounts:
         - name: static-vol
