@@ -41,5 +41,5 @@ spec:
   - name: static-vol
     persistentVolumeClaim:
       claimName: ebs-static-pvc
-  nodeAffinity:
+  nodeSelector:
     topology.kubernetes.io/zone: ap-south-2a
