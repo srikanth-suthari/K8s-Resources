@@ -1,3 +1,4 @@
+-> Static Volume Provisioning.
 step by step guide ( how we create a pv, pvc and how we attach it to a pod or to any other resource )
 
 - first we create a voluem in our cloud provider based on our availability zone
