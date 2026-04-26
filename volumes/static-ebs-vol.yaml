@@ -41,5 +41,5 @@ spec:
   - name: pod-vol
     persistentVolumeClaim:
       claimName: static-pvc
-  nodeSelector:
-    topology.kubernetes.io/zone: ap-south-2a
+  # nodeSelector:
+  #   topology.kubernetes.io/zone: ap-south-2a
