@@ -1,4 +1,4 @@
--> Static Volume Provisioning.
+Static Volume Provisioning with EBS (Elastic Block Storage)
 step by step guide ( how we create a pv, pvc and how we attach it to a pod or to any other resource )
 
 - first we create a voluem in our cloud provider based on our availability zone
@@ -20,7 +20,7 @@ These are the mandatory things to be followed while creating and mounting the pv
 This command lists which pods are using which volumes or claims
 # kubectl get pods -o json | jq '.items[] | {pod: .metadata.name, volumes: .spec.volumes}'
 
-Dynamic Volume Provisioning
+Dynamic Volume Provisioning with EBS (Elastic Block Storage)
 steps to be followed (for dynamic volume provisioning)
 
 - first we install the required csi drivers
@@ -29,3 +29,12 @@ steps to be followed (for dynamic volume provisioning)
 - * here we create a pvc and it creates a disk in the cloud and a pv in our cluster automatically
 - it waits for a consumer like a pod (here pod or any other resource which is using the storage or pvc is a cosnumer)
 - here all the process is done dynamically and provsioned the storage/volume based on the demand (pvc creation)
+
+Static Volume Provisioning with EFS (Elastic File System)
+steps to be followed
+
+- first we create a efs volume
+- give required role access to the ec2 instaces which are in our eks cluster
+- enable port for the efs volume with 2049 (because it is a network storage or filesystem)
+- next forward the inbound traffic from the security group of the ec2 instances of our eks cluster
+- finally we push or add the files to this filesystem
