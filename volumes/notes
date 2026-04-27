@@ -34,7 +34,14 @@ Static Volume Provisioning with EFS (Elastic File System)
 steps to be followed
 
 - first we create a efs volume
+- install the required csi drivers for the volume provisioning
 - give required role access to the ec2 instaces which are in our eks cluster
 - enable port for the efs volume with 2049 (because it is a network storage or filesystem)
 - next forward the inbound traffic from the security group of the ec2 instances of our eks cluster
 - finally we push or add the files to this filesystem
+
+Dynamic Volume Provisioning with EFS (Elastic File System)
+steps to be followed
+
+- first we create a storage class for the dynamic volume provisioning
+-
