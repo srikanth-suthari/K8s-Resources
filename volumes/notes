@@ -20,3 +20,12 @@ These are the mandatory things to be followed while creating and mounting the pv
 This command lists which pods are using which volumes or claims
 # kubectl get pods -o json | jq '.items[] | {pod: .metadata.name, volumes: .spec.volumes}'
 
+Dynamic Volume Provisioning
+steps to be followed (for dynamic volume provisioning)
+
+- first we install the required csi drivers
+- give the required role access to the ec2 instances whcih are there in our cluster
+- create a storageclass for our project (it is namespace level)
+- * here we create a pvc and it creates a disk in the cloud and a pv in our cluster automatically
+- it waits for a consumer like a pod (here pod or any other resource which is using the storage or pvc is a cosnumer)
+- here all the process is done dynamically and provsioned the storage/volume based on the demand (pvc creation)
