@@ -6,9 +6,9 @@ spec:
   containers:
     - name: nginx
       image: nginx
-  tolerations:
-    - key: control-plane
-      operator: "Exists"
-      effect: "NoSchedule"
+  # tolerations:
+  #   - key: control-plane
+  #     operator: "Exists"
+  #     effect: "NoSchedule"
   nodeSelector:
-    name: control-plane
+    name: node-1
