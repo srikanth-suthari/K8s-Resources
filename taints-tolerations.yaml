@@ -9,4 +9,4 @@ spec:
   tolerations:
     - key: ubuntu
       operator: "Exists"
-      effect: "NoSchedule"
+      effect: "PreferNoSchedule"
