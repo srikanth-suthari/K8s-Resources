@@ -7,6 +7,6 @@ spec:
     - name: nginx
       image: nginx
   tolerations:
-    - key: ubutnu
+    - key: ubuntu
       operator: "Exists"
       effect: "NoSchedule"
