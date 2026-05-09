@@ -7,6 +7,6 @@ spec:
     - name: nginx
       image: nginx
   tolerations:
-    - key: "control-plane"
+    - key: "node1"
       operator: "Exists"
       effect: "NoSchedule"
