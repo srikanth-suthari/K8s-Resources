@@ -10,3 +10,5 @@ spec:
     - key: control-plane
       operator: "Exists"
       effect: "NoSchedule"
+  nodeSelector:
+    name: control-plane
