@@ -8,6 +8,5 @@ spec:
       image: nginx
   tolerations:
     - key: ubutnu
-      operator: "Equal"
-      value: ubuntu
+      operator: "Exists"
       effect: "NoSchedule"
