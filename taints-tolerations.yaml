@@ -1,12 +1,14 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: taints-3
+  name: taints
 spec:
   containers:
     - name: nginx
       image: nginx
-  tolerations:
-    - key: ubuntu
-      operator: "Exists"
-      effect: "NoSchedule"
+  # tolerations:
+  #   - key: ubuntu
+  #     operator: "Exists"
+  #     effect: "NoSchedule"
+  nodeSelector:
+    name: control-plane
